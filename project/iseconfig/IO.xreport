@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-11-26T14:28:51</DateModified>
+  <DateModified>2019-12-16T13:16:54</DateModified>
   <ModuleName>IO</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>E:/URK96/Working/Project/FPGA/Microprocessor/project/iseconfig/IO.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/URK96/Working/Project/FPGA/Microprocessor/project</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>E:/URK96/Working/Project/FPGA/Microprocessor/project\</ImplementationReportsDirectory>
   <DateInitialized>2019-11-26T14:28:51</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
