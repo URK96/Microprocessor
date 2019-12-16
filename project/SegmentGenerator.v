@@ -4,8 +4,8 @@ module SegmentGenerator(
 	input CLK,
 	input Reset,
 	input [7:0] Result,
-	output [7:0] Segment_0,
-	output [7:0] Segment_1
+	output [6:0] Segment_0,
+	output [6:0] Segment_1
     );
 	
 	wire [3:0] F4;
