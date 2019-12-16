@@ -8,18 +8,19 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/URK96/Working/Project/FPGA/Microprocessor/project/ALU.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Cho_Hyunsuh/Downloads/project/BCD7Segment.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/URK96/Working/Project/FPGA/Microprocessor/project/BCD7Segment.v&quot; into library work</arg>
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">C:/Users/Cho_Hyunsuh/Downloads/project/BCD7Segment.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Syntax error near &quot;¡&quot;.</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/URK96/Working/Project/FPGA/Microprocessor/project/CLK10Mto10K.v&quot; into library work</arg>
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">C:/Users/Cho_Hyunsuh/Downloads/project/BCD7Segment.v</arg>&quot; Line <arg fmt="%d" index="2">22</arg>. <arg fmt="%s" index="3">Syntax error near &quot;¡&quot;.</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/URK96/Working/Project/FPGA/Microprocessor/project/Control.v&quot; into library work</arg>
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">C:/Users/Cho_Hyunsuh/Downloads/project/BCD7Segment.v</arg>&quot; Line <arg fmt="%d" index="2">23</arg>. <arg fmt="%s" index="3">Syntax error near &quot;¡&quot;.</arg>
 </msg>
 
+<<<<<<< HEAD
 <msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/URK96/Working/Project/FPGA/Microprocessor/project/Control.v</arg>&quot; Line <arg fmt="%d" index="2">44</arg>. <arg fmt="%s" index="3">Syntax error near &quot;begin&quot;.</arg>
 </msg>
 
@@ -27,12 +28,30 @@
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/URK96/Working/Project/FPGA/Microprocessor/project/IO.v&quot; into library work</arg>
+=======
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">C:/Users/Cho_Hyunsuh/Downloads/project/BCD7Segment.v</arg>&quot; Line <arg fmt="%d" index="2">24</arg>. <arg fmt="%s" index="3">Syntax error near &quot;¡&quot;.</arg>
+>>>>>>> 5f1925cc611ca46631a313ab018f07cbbc90b588
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/URK96/Working/Project/FPGA/Microprocessor/project/RAM.v&quot; into library work</arg>
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">C:/Users/Cho_Hyunsuh/Downloads/project/BCD7Segment.v</arg>&quot; Line <arg fmt="%d" index="2">25</arg>. <arg fmt="%s" index="3">Syntax error near &quot;¡&quot;.</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/URK96/Working/Project/FPGA/Microprocessor/project/SegmentGenerator.v&quot; into library work</arg>
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">C:/Users/Cho_Hyunsuh/Downloads/project/BCD7Segment.v</arg>&quot; Line <arg fmt="%d" index="2">26</arg>. <arg fmt="%s" index="3">Syntax error near &quot;¡&quot;.</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Cho_Hyunsuh/Downloads/project/IO.v&quot; into library work</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">C:/Users/Cho_Hyunsuh/Downloads/project/IO.v</arg>&quot; Line <arg fmt="%d" index="2">50</arg>. <arg fmt="%s" index="3">Syntax error near &quot;end&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">C:/Users/Cho_Hyunsuh/Downloads/project/IO.v</arg>&quot; Line <arg fmt="%d" index="2">53</arg>. <arg fmt="%s" index="3">Syntax error near &quot;)&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">C:/Users/Cho_Hyunsuh/Downloads/project/IO.v</arg>&quot; Line <arg fmt="%d" index="2">54</arg>. <arg fmt="%s" index="3">Syntax error near &quot;)&quot;.</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Cho_Hyunsuh/Downloads/project/RAM.v&quot; into library work</arg>
 </msg>
 
 </messages>
