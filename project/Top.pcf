@@ -1,0 +1,36 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Dec 16 20:41:24 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "SlideSwitch<0>" LOCATE = SITE "G15" LEVEL 1;
+COMP "SlideSwitch<1>" LOCATE = SITE "P15" LEVEL 1;
+COMP "SlideSwitch<2>" LOCATE = SITE "W13" LEVEL 1;
+COMP "SlideSwitch<3>" LOCATE = SITE "T16" LEVEL 1;
+COMP "Button<1>" LOCATE = SITE "P16" LEVEL 1;
+COMP "Button<2>" LOCATE = SITE "V16" LEVEL 1;
+COMP "Button<3>" LOCATE = SITE "Y16" LEVEL 1;
+COMP "Button<0>" LOCATE = SITE "R18" LEVEL 1;
+COMP "Segment7_1<0>" LOCATE = SITE "H15" LEVEL 1;
+COMP "Segment7_1<1>" LOCATE = SITE "T14" LEVEL 1;
+COMP "Segment7_1<2>" LOCATE = SITE "T15" LEVEL 1;
+COMP "Segment7_1<3>" LOCATE = SITE "P14" LEVEL 1;
+COMP "Segment7_1<4>" LOCATE = SITE "R14" LEVEL 1;
+COMP "Segment7_1<5>" LOCATE = SITE "V12" LEVEL 1;
+COMP "Segment7_1<6>" LOCATE = SITE "W16" LEVEL 1;
+COMP "Segment7_1<7>" LOCATE = SITE "J15" LEVEL 1;
+COMP "CLK_REF" LOCATE = SITE "L16" LEVEL 1;
+COMP "Segment7_0<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "Segment7_0<1>" LOCATE = SITE "T20" LEVEL 1;
+COMP "Segment7_0<2>" LOCATE = SITE "U20" LEVEL 1;
+COMP "Segment7_0<3>" LOCATE = SITE "V20" LEVEL 1;
+COMP "Segment7_0<4>" LOCATE = SITE "W20" LEVEL 1;
+COMP "Segment7_0<5>" LOCATE = SITE "V15" LEVEL 1;
+COMP "Segment7_0<6>" LOCATE = SITE "W15" LEVEL 1;
+COMP "Segment7_0<7>" LOCATE = SITE "T11" LEVEL 1;
+COMP "LED<0>" LOCATE = SITE "M14" LEVEL 1;
+COMP "LED<1>" LOCATE = SITE "M15" LEVEL 1;
+COMP "LED<2>" LOCATE = SITE "G14" LEVEL 1;
+COMP "LED<3>" LOCATE = SITE "D18" LEVEL 1;
+SCHEMATIC END;
+

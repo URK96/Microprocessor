@@ -2,28 +2,21 @@
 
 module CLK10Mto10K(
 	input CLK10M,
-	input Reset,
 	output reg CLK10K
     );
 
 	reg [8:0] count;
 
-	always @(posedge CLK10M or posedge Reset)
+	always @(posedge CLK10M)
 	begin
-		if (Reset)
+		if (count == 499)
 		begin
 			count <= 0;
-			CLK10K <= 0;
+			CLK10K <= ~CLK10K;
 		end
 		else
 		begin
-			if (count == 499)
-			begin
-				count <= 0;
-				CLK10K <= ~CLK10K;
-			end
-			else
-				count <= count + 1'b1;
+			count <= count + 1'b1;
 		end
 	end
 

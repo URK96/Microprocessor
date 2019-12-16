@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\URK96\Working\Project\FPGA\Microprocessor\project\Top.ncd
+OUTFILE=E:\URK96\Working\Project\FPGA\Microprocessor\project\Top.bit
+FAMILY=Zynq
+PART=xc7z010-2clg400
+WORKINGDIR=E:\URK96\Working\Project\FPGA\Microprocessor\project
+LICENSE=WebPack
+USER_INFO=__0_0_0

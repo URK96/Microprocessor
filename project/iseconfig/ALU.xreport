@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-12-16T11:18:47</DateModified>
+  <DateModified>2019-12-16T14:30:30</DateModified>
   <ModuleName>ALU</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Cho_Hyunsuh/Downloads/project/iseconfig/ALU.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Cho_Hyunsuh/Downloads/project\</ImplementationReportsDirectory>
+  <SavedFilePath>E:/URK96/Working/Project/FPGA/Microprocessor/project/iseconfig/ALU.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>E:/URK96/Working/Project/FPGA/Microprocessor/project\</ImplementationReportsDirectory>
   <DateInitialized>2019-12-16T04:48:17</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

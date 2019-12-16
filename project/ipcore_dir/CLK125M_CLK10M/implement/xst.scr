@@ -1,0 +1,9 @@
+run
+-ifmt MIXED
+-top CLK125M_CLK10M_exdes
+-p xc7z010-clg400-2
+-ifn xst.prj
+-ofn CLK125M_CLK10M_exdes
+-keep_hierarchy soft 
+-equivalent_register_removal no 
+-max_fanout 65535
