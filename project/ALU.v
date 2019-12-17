@@ -7,8 +7,11 @@
 	output reg [15:0] Result
     );
 
-	reg [8:0] overflow;
-    
+   // overflow 감지용 임시 register
+	reg [8:0] overCheckR;
+   // Shift 연산 확장용 임시 register
+	reg [15:0] shiftTempR;
+
    parameter[2:0] add = 3'b000,
                   sub = 3'b001,
                   div = 3'b010,
@@ -19,8 +22,9 @@
                   shift_r = 3'b111;
       
    initial begin
-      overflow = 9'b0_0000_0000;
-      Result = 16'b0000_0000_0000_0000;
+      overCheckR = 9'd0;
+		shiftTempR = 16'd0;
+      Result = 16'd0;
    end
 	
    always @ (*)
@@ -28,12 +32,22 @@
       case(Instruction_alu)
          add: 
          begin
-            Result <= {7'd0, {1'b0, OperandA} + {1'b0, OperandB}};
+            overCheckR <= {1'b0, OperandA} + {1'b0, OperandB};
+            // Add Overflow를 감지하여 Overflow 시 0으로 결과 출력
+            if (overCheckR[8] == 1'b1)
+            begin
+               Result <= 16'd0;
+            end
+            else
+            begin
+               Result <= {7'd0, overCheckR};
+            end
          end
             
          sub:
          begin
-            if (OperandB > OperandA) //OperandB가 OperandA보다 크면, 음수가 나오게 되어 오버플로우가 발생한다. 0으로 표현한다.
+            //OperandB가 OperandA보다 크면, 음수가 나오게 되어 오버플로우가 발생한다. 0으로 표현한다.
+            if (OperandB > OperandA) 
             begin
                Result <= 16'b0000_0000_0000_0000;
             end
@@ -42,9 +56,10 @@
                Result <= (OperandA - OperandB);
             end
          end
-
-         div:	//나눗셈
+         // 나눗셈
+         div:
          begin
+            // 0으로 나누는 경우 전부 0으로 결과 출력
             if (OperandB == 0) 
             begin
                Result <= 16'd0;
@@ -55,28 +70,29 @@
                Result[15:8] <= (OperandA % OperandB);
             end
          end
-
-         mul:	//곱셈
+         // 곱셈
+         mul:
          begin
             Result <= (OperandA * OperandB);
          end
-
-         or_:	// OR 연산
+         // OR 연산
+         or_:
          begin
             Result <= (OperandA | OperandB);
          end
-
-         not_: // NOT 연산
+         // NOT 연산
+         not_:
          begin
             Result <= (~OperandA);
          end
-
-         shift_l: // Left Shift 연산
+         // Left Shift 연산
+         shift_l:
          begin
-            Result <= (OperandA << OperandB);
+            shiftTempR <= {8'd0, OperandA};
+            Result <= (shiftTempR << OperandB);
          end
-
-         shift_r: // Right Shift 연산
+         // Right Shift 연산
+         shift_r:
          begin 
             Result <= (OperandA >> OperandB);
          end

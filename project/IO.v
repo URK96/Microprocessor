@@ -10,11 +10,13 @@ module IO(
 	output reg [3:0] User_Input1,
 	output CLK_In,
 	output reg [3:0] LED,
-	output [7:0] Segment7_0,
-	output [7:0] Segment7_1
+	output [7:0] Segment7_0, // 오른쪽 Segment 모듈용
+	output [7:0] Segment7_1 // 왼쪽 Segment 모듈용
     );
 
+	// 내부에서 사용할 10KHz 클럭
 	wire CLK10K;
+	// Result를 Segment에 유지하기 위한 임시 register
 	reg [15:0] eResult;
 	
 	initial
@@ -49,11 +51,11 @@ module IO(
 		case(State)
 			S0:
 			begin
-				LED <= 4'b0000;
 			end
 
 			S1:
 			begin
+				LED <= 4'b0000;
 				eResult <= {12'd0, Result[3:0]};
 			end
 
@@ -106,6 +108,11 @@ module IO(
 			begin
 				LED <= 4'b0001;
 				eResult <= {eResult[15:4], Result[3:0]};
+			end
+			
+			S14:
+			begin
+				eResult <= Result;
 			end
 
 			S15:

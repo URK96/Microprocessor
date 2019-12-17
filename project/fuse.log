@@ -1,0 +1,38 @@
+Running: D:\Xilinx\14.7\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/URK96/Working/Project/FPGA/Microprocessor/project/TB_Top_isim_beh.exe -prj E:/URK96/Working/Project/FPGA/Microprocessor/project/TB_Top_beh.prj work.TB_Top work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/URK96/Working/Project/FPGA/Microprocessor/project/ipcore_dir/CLK125M_CLK10M.v" into library work
+Analyzing Verilog file "E:/URK96/Working/Project/FPGA/Microprocessor/project/BCD7Segment.v" into library work
+Analyzing Verilog file "E:/URK96/Working/Project/FPGA/Microprocessor/project/SegmentTimer.v" into library work
+Analyzing Verilog file "E:/URK96/Working/Project/FPGA/Microprocessor/project/CLK10Mto10K.v" into library work
+Analyzing Verilog file "E:/URK96/Working/Project/FPGA/Microprocessor/project/RAM.v" into library work
+Analyzing Verilog file "E:/URK96/Working/Project/FPGA/Microprocessor/project/IO.v" into library work
+Analyzing Verilog file "E:/URK96/Working/Project/FPGA/Microprocessor/project/Control.v" into library work
+Analyzing Verilog file "E:/URK96/Working/Project/FPGA/Microprocessor/project/ALU.v" into library work
+Analyzing Verilog file "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.v" into library work
+Analyzing Verilog file "E:/URK96/Working/Project/FPGA/Microprocessor/project/TB_Top.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.7/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module IBUFG
+Compiling module MMCME2_ADV(CLKFBOUT_MULT_F=8.0,C...
+Compiling module BUFG
+Compiling module CLK125M_CLK10M
+Compiling module RAM
+Compiling module ALU
+Compiling module CLK10Mto10K
+Compiling module BCD7Segment
+Compiling module SegmentTimer
+Compiling module IO
+Compiling module Control
+Compiling module Top
+Compiling module TB_Top
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 6 sub-compilation(s) to finish...
+Compiled 14 Verilog Units
+Built simulation executable E:/URK96/Working/Project/FPGA/Microprocessor/project/TB_Top_isim_beh.exe
+Fuse Memory Usage: 44120 KB
+Fuse CPU Usage: 827 ms

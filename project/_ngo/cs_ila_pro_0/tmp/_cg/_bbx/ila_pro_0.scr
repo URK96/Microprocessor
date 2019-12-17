@@ -1,0 +1,16 @@
+set -xsthdpdir "E:/URK96/Working/Project/FPGA/Microprocessor/project/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0_chipscope_ila_v1_05_a_xst"
+run
+-ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.prj"
+-top ila_pro_0
+-p xc7z020-clg484-2
+-work_lib work
+-bus_delimiter <>
+-lso "E:/URK96/Working/Project/FPGA/Microprocessor/project/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/_default.lso"
+-bufg 0
+-ifmt MIXED
+-iobuf NO
+-loop_iteration_limit 8192
+-checkcmdline no
+-arch zynq
+-ofmt NGC
+-ofn E:/URK96/Working/Project/FPGA/Microprocessor/project/_ngo/cs_ila_pro_0/tmp/_cg/ila_pro_0.ngc

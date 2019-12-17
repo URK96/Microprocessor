@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-C5EV789::  Mon Dec 16 20:41:28 2019
+DESKTOP-C5EV789::  Wed Dec 18 02:40:41 2019
 
 par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
 
@@ -31,46 +31,46 @@ Device Utilization Summary:
       Number of LOCed IOB33s                29 out of 29    100%
 
    Number of MMCME2_ADVs                     1 out of 2      50%
-   Number of Slices                        334 out of 4400    7%
-   Number of Slice Registers               258 out of 35200   1%
-      Number used as Flip Flops            258
-      Number used as Latches                 0
+   Number of Slices                        346 out of 4400    7%
+   Number of Slice Registers               270 out of 35200   1%
+      Number used as Flip Flops            253
+      Number used as Latches                17
       Number used as LatchThrus              0
 
-   Number of Slice LUTS                    602 out of 17600   3%
-   Number of Slice LUT-Flip Flop pairs     691 out of 17600   3%
+   Number of Slice LUTS                    665 out of 17600   3%
+   Number of Slice LUT-Flip Flop pairs     752 out of 17600   4%
 
 
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 11 secs 
-Finished initial Timing Analysis.  REAL time: 11 secs 
+Starting initial Timing Analysis.  REAL time: 14 secs 
+Finished initial Timing Analysis.  REAL time: 14 secs 
 
 Starting Router
 
 
-Phase  1  : 4024 unrouted;      REAL time: 12 secs 
+Phase  1  : 4395 unrouted;      REAL time: 14 secs 
 
-Phase  2  : 3589 unrouted;      REAL time: 12 secs 
+Phase  2  : 3964 unrouted;      REAL time: 14 secs 
 
-Phase  3  : 1464 unrouted;      REAL time: 13 secs 
+Phase  3  : 1739 unrouted;      REAL time: 16 secs 
 
-Phase  4  : 1766 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
+Phase  4  : 2013 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
 
 Updating file: Top.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 23 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 25 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 25 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 25 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
-Total REAL time to Router completion: 19 secs 
-Total CPU time to Router completion: 19 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 26 secs 
+Total REAL time to Router completion: 26 secs 
+Total CPU time to Router completion: 26 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -89,12 +89,16 @@ Generating Clock Report
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
 |io/clk10mto10k/CLK10 |              |      |      |            |             |
-|              K_BUFG | BUFGCTRL_X0Y0| No   |  169 |  0.107     |  1.484      |
+|              K_BUFG | BUFGCTRL_X0Y0| No   |  163 |  0.110     |  1.500      |
 +---------------------+--------------+------+------+------------+-------------+
-|             CLK_10M |BUFGCTRL_X0Y30| No   |    4 |  0.003     |  1.468      |
+|             CLK_10M |BUFGCTRL_X0Y30| No   |    4 |  0.003     |  1.456      |
 +---------------------+--------------+------+------+------------+-------------+
 |convertCLK/clkfbout_ |              |      |      |            |             |
 |                 buf |BUFGCTRL_X0Y31| No   |    1 |  0.000     |  1.425      |
++---------------------+--------------+------+------+------------+-------------+
+|  alu/Mmux_Result313 |         Local|      |   11 |  0.000     |  0.883      |
++---------------------+--------------+------+------+------------+-------------+
+|          alu/_n0111 |         Local|      |    3 |  0.395     |  1.152      |
 +---------------------+--------------+------+------+------------+-------------+
 |   convertCLK/clkin1 |         Local|      |    1 |  0.000     |  1.110      |
 +---------------------+--------------+------+------+------------+-------------+
@@ -107,7 +111,7 @@ the minimum and maximum path delays which includes logic delays.
 * The fanout is the number of component pins not the individual BEL loads,
 for example SLICE loads not FF loads.
 
-Timing Score: 0 (Setup: 0, Hold: 0)
+Timing Score: 59 (Setup: 59, Hold: 0)
 
 Asterisk (*) preceding a constraint indicates it was not met.
    This may be due to a setup or hold violation.
@@ -116,15 +120,15 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net io/ | SETUP       |         N/A|    11.026ns|     N/A|           0
-  clk10mto10k/CLK10K_BUFG                   | HOLD        |     0.105ns|            |       0|           0
+  Autotimespec constraint for clock net io/ | SETUP       |         N/A|    11.260ns|     N/A|          59
+  clk10mto10k/CLK10K_BUFG                   | HOLD        |     0.108ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     2.552ns|     N/A|           0
+  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     2.550ns|     N/A|           0
   _10M                                      | HOLD        |     0.265ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
-All constraints were met.
+1 constraint not met.
 INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
    constraint is not analyzed due to the following: No paths covered by this 
    constraint; Other constraints intersect with this constraint; or This 
@@ -136,8 +140,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 20 secs 
-Total CPU time to PAR completion: 20 secs 
+Total REAL time to PAR completion: 27 secs 
+Total CPU time to PAR completion: 27 secs 
 
 Peak Memory Usage:  4795 MB
 

@@ -131,3 +131,142 @@ map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -reg
 par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
 bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.xst" -ofn "E:/URK96/Working/Project/FPGA/Microprocessor/project/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7z010-clg400-2 Top.ngc Top.ngd  
+map -intstyle ise -p xc7z010-clg400-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 

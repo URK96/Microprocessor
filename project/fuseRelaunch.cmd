@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/URK96/Working/Project/FPGA/Microprocessor/project/TB_Top_isim_beh.exe" -prj "E:/URK96/Working/Project/FPGA/Microprocessor/project/TB_Top_beh.prj" "work.TB_Top" "work.glbl" 

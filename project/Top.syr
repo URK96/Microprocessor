@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Reading design: Top.prj
 
@@ -167,7 +167,6 @@ Elaborating module <IO>.
 Elaborating module <CLK10Mto10K>.
 
 Elaborating module <SegmentTimer>.
-WARNING:HDLCompiler:1127 - "E:\URK96\Working\Project\FPGA\Microprocessor\project\SegmentTimer.v" Line 30: Assignment to timer ignored, since the identifier is never used
 
 Elaborating module <BCD7Segment>.
 
@@ -322,23 +321,23 @@ Synthesizing Unit <RAM>.
     Found 8-bit register for signal <OperandB>.
     Found 1-bit register for signal <RAM<0><7>>.
     Found 8-bit 16-to-1 multiplexer for signal <Aaddr[3]_RAM[15][7]_wide_mux_1_OUT> created at line 33.
-    Found 8-bit 16-to-1 multiplexer for signal <Baddr[3]_RAM[15][7]_wide_mux_48_OUT> created at line 74.
-    Found 1-bit 3-to-1 multiplexer for signal <_n1575> created at line 62.
-    Found 1-bit 3-to-1 multiplexer for signal <_n1577> created at line 62.
-    Found 1-bit 3-to-1 multiplexer for signal <_n1579> created at line 62.
-    Found 1-bit 3-to-1 multiplexer for signal <_n1581> created at line 62.
-    Found 1-bit 3-to-1 multiplexer for signal <_n1583> created at line 62.
-    Found 1-bit 3-to-1 multiplexer for signal <_n1585> created at line 62.
-    Found 1-bit 3-to-1 multiplexer for signal <_n1587> created at line 62.
-    Found 1-bit 3-to-1 multiplexer for signal <_n1589> created at line 62.
-    Found 1-bit 3-to-1 multiplexer for signal <_n1591> created at line 62.
-    Found 1-bit 3-to-1 multiplexer for signal <_n1593> created at line 62.
-    Found 1-bit 3-to-1 multiplexer for signal <_n1595> created at line 62.
-    Found 1-bit 3-to-1 multiplexer for signal <_n1597> created at line 62.
-    Found 1-bit 3-to-1 multiplexer for signal <_n1599> created at line 62.
-    Found 1-bit 3-to-1 multiplexer for signal <_n1601> created at line 62.
-    Found 1-bit 3-to-1 multiplexer for signal <_n1603> created at line 62.
-    Found 1-bit 3-to-1 multiplexer for signal <_n1605> created at line 62.
+    Found 8-bit 16-to-1 multiplexer for signal <Baddr[3]_RAM[15][7]_wide_mux_48_OUT> created at line 70.
+    Found 1-bit 3-to-1 multiplexer for signal <_n1575> created at line 60.
+    Found 1-bit 3-to-1 multiplexer for signal <_n1577> created at line 60.
+    Found 1-bit 3-to-1 multiplexer for signal <_n1579> created at line 60.
+    Found 1-bit 3-to-1 multiplexer for signal <_n1581> created at line 60.
+    Found 1-bit 3-to-1 multiplexer for signal <_n1583> created at line 60.
+    Found 1-bit 3-to-1 multiplexer for signal <_n1585> created at line 60.
+    Found 1-bit 3-to-1 multiplexer for signal <_n1587> created at line 60.
+    Found 1-bit 3-to-1 multiplexer for signal <_n1589> created at line 60.
+    Found 1-bit 3-to-1 multiplexer for signal <_n1591> created at line 60.
+    Found 1-bit 3-to-1 multiplexer for signal <_n1593> created at line 60.
+    Found 1-bit 3-to-1 multiplexer for signal <_n1595> created at line 60.
+    Found 1-bit 3-to-1 multiplexer for signal <_n1597> created at line 60.
+    Found 1-bit 3-to-1 multiplexer for signal <_n1599> created at line 60.
+    Found 1-bit 3-to-1 multiplexer for signal <_n1601> created at line 60.
+    Found 1-bit 3-to-1 multiplexer for signal <_n1603> created at line 60.
+    Found 1-bit 3-to-1 multiplexer for signal <_n1605> created at line 60.
     Found 4-bit comparator lessequal for signal <n0001> created at line 35
     Found 4-bit comparator lessequal for signal <n0003> created at line 35
     Found 4-bit comparator lessequal for signal <n0010> created at line 41
@@ -358,18 +357,37 @@ Synthesizing Unit <ALU>.
         not_ = 3'b101
         shift_l = 3'b110
         shift_r = 3'b111
-    Found 9-bit subtractor for signal <GND_7_o_GND_7_o_sub_3_OUT> created at line 52.
-    Found 9-bit adder for signal <n0040[8:0]> created at line 31.
-    Found 8x8-bit multiplier for signal <OperandA[7]_OperandB[7]_MuLt_8_OUT> created at line 71.
-    Found 16-bit shifter logical left for signal <GND_7_o_OperandB[7]_shift_left_11_OUT> created at line 86
-    Found 16-bit shifter logical right for signal <GND_7_o_OperandB[7]_shift_right_12_OUT> created at line 91
-    Found 16-bit 8-to-1 multiplexer for signal <Result> created at line 28.
-    Found 8-bit comparator greater for signal <OperandA[7]_OperandB[7]_LessThan_2_o> created at line 46
+    Found 9-bit subtractor for signal <GND_7_o_GND_7_o_sub_5_OUT> created at line 56.
+    Found 9-bit adder for signal <n0073> created at line 35.
+    Found 8x8-bit multiplier for signal <OperandA[7]_OperandB[7]_MuLt_10_OUT> created at line 76.
+    Found 16-bit shifter logical left for signal <shiftTempR[15]_OperandB[7]_shift_left_13_OUT> created at line 92
+    Found 16-bit shifter logical right for signal <GND_7_o_OperandB[7]_shift_right_14_OUT> created at line 97
+    Found 16-bit 8-to-1 multiplexer for signal <Result> created at line 32.
+WARNING:Xst:737 - Found 1-bit latch for signal <shiftTempR<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shiftTempR<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shiftTempR<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shiftTempR<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shiftTempR<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shiftTempR<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shiftTempR<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shiftTempR<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shiftTempR<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <overCheckR<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <overCheckR<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <overCheckR<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <overCheckR<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <overCheckR<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <overCheckR<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <overCheckR<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <overCheckR<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <overCheckR<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 8-bit comparator greater for signal <OperandA[7]_OperandB[7]_LessThan_4_o> created at line 50
     Summary:
 	inferred   1 Multiplier(s).
 	inferred   2 Adder/Subtractor(s).
+	inferred  18 Latch(s).
 	inferred   1 Comparator(s).
-	inferred   5 Multiplexer(s).
+	inferred   6 Multiplexer(s).
 	inferred   2 Combinational logic shifter(s).
 Unit <ALU> synthesized.
 
@@ -484,7 +502,7 @@ Synthesizing Unit <CLK10Mto10K>.
     Related source file is "E:\URK96\Working\Project\FPGA\Microprocessor\project\CLK10Mto10K.v".
     Found 1-bit register for signal <CLK10K>.
     Found 9-bit register for signal <count>.
-    Found 9-bit adder for signal <count[8]_GND_14_o_add_2_OUT> created at line 19.
+    Found 9-bit adder for signal <count[8]_GND_39_o_add_2_OUT> created at line 19.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  10 D-type flip-flop(s).
@@ -519,17 +537,20 @@ Synthesizing Unit <Control>.
         S14 = 4'b1110
         S15 = 4'b1111
     Found 4-bit register for signal <ntState>.
-    Found 4-bit register for signal <tAddr>.
     Found 16-bit register for signal <Instruction>.
+    Found 4-bit register for signal <tAddr>.
     Found 4-bit register for signal <Op4>.
     Found 4-bit register for signal <Op3>.
     Found 4-bit register for signal <Op2>.
     Found 4-bit register for signal <Op1>.
     Found 4-bit register for signal <State>.
     Found 4-bit register for signal <nState>.
+    Found 4-bit comparator equal for signal <Op1[3]_Op3[0]_equal_59_o> created at line 269
+    Found 4-bit comparator equal for signal <Op2[3]_Op3[0]_equal_60_o> created at line 269
     Summary:
 	inferred  48 D-type flip-flop(s).
-	inferred  40 Multiplexer(s).
+	inferred   2 Comparator(s).
+	inferred  42 Multiplexer(s).
 Unit <Control> synthesized.
 
 =========================================================================
@@ -557,7 +578,9 @@ Macro Statistics
  4-bit register                                        : 11
  8-bit register                                        : 15
  9-bit register                                        : 1
-# Comparators                                          : 22
+# Latches                                              : 18
+ 1-bit latch                                           : 18
+# Comparators                                          : 24
  10-bit comparator lessequal                           : 2
  11-bit comparator lessequal                           : 2
  12-bit comparator lessequal                           : 2
@@ -565,14 +588,15 @@ Macro Statistics
  14-bit comparator lessequal                           : 2
  15-bit comparator lessequal                           : 2
  16-bit comparator lessequal                           : 2
+ 4-bit comparator equal                                : 2
  4-bit comparator lessequal                            : 3
  8-bit comparator greater                              : 1
  8-bit comparator lessequal                            : 2
  9-bit comparator lessequal                            : 2
-# Multiplexers                                         : 460
+# Multiplexers                                         : 463
  1-bit 2-to-1 multiplexer                              : 392
  1-bit 3-to-1 multiplexer                              : 16
- 16-bit 2-to-1 multiplexer                             : 14
+ 16-bit 2-to-1 multiplexer                             : 17
  16-bit 8-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 31
  8-bit 16-to-1 multiplexer                             : 2
@@ -587,6 +611,7 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1293 - FF/Latch <shiftTempR_14> has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <BCD7Segment>.
 INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segment> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
@@ -622,7 +647,7 @@ Macro Statistics
  9-bit up counter                                      : 1
 # Registers                                            : 221
  Flip-Flops                                            : 221
-# Comparators                                          : 22
+# Comparators                                          : 24
  10-bit comparator lessequal                           : 2
  11-bit comparator lessequal                           : 2
  12-bit comparator lessequal                           : 2
@@ -630,15 +655,16 @@ Macro Statistics
  14-bit comparator lessequal                           : 2
  15-bit comparator lessequal                           : 2
  16-bit comparator lessequal                           : 2
+ 4-bit comparator equal                                : 2
  4-bit comparator lessequal                            : 3
  8-bit comparator greater                              : 1
  8-bit comparator lessequal                            : 2
  9-bit comparator lessequal                            : 2
-# Multiplexers                                         : 504
+# Multiplexers                                         : 477
  1-bit 16-to-1 multiplexer                             : 16
- 1-bit 2-to-1 multiplexer                              : 424
+ 1-bit 2-to-1 multiplexer                              : 392
  1-bit 3-to-1 multiplexer                              : 16
- 16-bit 2-to-1 multiplexer                             : 12
+ 16-bit 2-to-1 multiplexer                             : 17
  16-bit 8-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 31
  8-bit 2-to-1 multiplexer                              : 4
@@ -651,6 +677,7 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1293 - FF/Latch <shiftTempR_14> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <Top> ...
 
@@ -664,16 +691,15 @@ Optimizing unit <ALU> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 3.
-FlipFlop ram/OperandA_4 has been replicated 3 time(s)
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 4.
+FlipFlop ram/OperandA_4 has been replicated 2 time(s)
 FlipFlop ram/OperandA_5 has been replicated 3 time(s)
-FlipFlop ram/OperandA_6 has been replicated 3 time(s)
-FlipFlop ram/OperandA_7 has been replicated 2 time(s)
-FlipFlop ram/OperandB_0 has been replicated 2 time(s)
-FlipFlop ram/OperandB_1 has been replicated 2 time(s)
+FlipFlop ram/OperandA_6 has been replicated 1 time(s)
+FlipFlop ram/OperandB_0 has been replicated 3 time(s)
+FlipFlop ram/OperandB_1 has been replicated 3 time(s)
 FlipFlop ram/OperandB_2 has been replicated 2 time(s)
 FlipFlop ram/OperandB_3 has been replicated 2 time(s)
-FlipFlop ram/OperandB_4 has been replicated 2 time(s)
+FlipFlop ram/OperandB_4 has been replicated 1 time(s)
 FlipFlop ram/OperandB_5 has been replicated 2 time(s)
 FlipFlop ram/OperandB_6 has been replicated 2 time(s)
 FlipFlop ram/OperandB_7 has been replicated 2 time(s)
@@ -684,8 +710,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 257
- Flip-Flops                                            : 257
+# Registers                                            : 253
+ Flip-Flops                                            : 253
 
 =========================================================================
 
@@ -708,25 +734,26 @@ Top Level Output File Name         : Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 845
+# BELS                             : 919
 #      GND                         : 1
 #      INV                         : 2
 #      LUT1                        : 8
-#      LUT2                        : 34
-#      LUT3                        : 60
-#      LUT4                        : 83
-#      LUT5                        : 131
-#      LUT6                        : 348
+#      LUT2                        : 36
+#      LUT3                        : 57
+#      LUT4                        : 81
+#      LUT5                        : 157
+#      LUT6                        : 392
 #      MUXCY                       : 53
-#      MUXF7                       : 48
+#      MUXF7                       : 55
 #      MUXF8                       : 16
 #      VCC                         : 1
 #      XORCY                       : 60
-# FlipFlops/Latches                : 257
-#      FD                          : 55
+# FlipFlops/Latches                : 270
+#      FD                          : 51
 #      FDE                         : 181
 #      FDR                         : 17
 #      FDRE                        : 4
+#      LD                          : 17
 # Clock Buffers                    : 3
 #      BUFG                        : 3
 # IO Buffers                       : 29
@@ -745,16 +772,16 @@ Selected Device : 7z010clg400-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             257  out of  35200     0%  
- Number of Slice LUTs:                  666  out of  17600     3%  
-    Number used as Logic:               666  out of  17600     3%  
+ Number of Slice Registers:             270  out of  35200     0%  
+ Number of Slice LUTs:                  733  out of  17600     4%  
+    Number used as Logic:               733  out of  17600     4%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    758
-   Number with an unused Flip Flop:     501  out of    758    66%  
-   Number with an unused LUT:            92  out of    758    12%  
-   Number of fully used LUT-FF pairs:   165  out of    758    21%  
-   Number of unique control sets:        33
+ Number of LUT Flip Flop pairs used:    829
+   Number with an unused Flip Flop:     559  out of    829    67%  
+   Number with an unused LUT:            96  out of    829    11%  
+   Number of fully used LUT-FF pairs:   174  out of    829    20%  
+   Number of unique control sets:        35
 
 IO Utilization: 
  Number of IOs:                          29
@@ -782,12 +809,18 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-convertCLK/clkout0                 | BUFG                   | 10    |
-io/clk10mto10k/CLK10K              | BUFG                   | 248   |
------------------------------------+------------------------+-------+
+-----------------------------------------+--------------------------+-------+
+Clock Signal                             | Clock buffer(FF name)    | Load  |
+-----------------------------------------+--------------------------+-------+
+convertCLK/clkout0                       | BUFG                     | 10    |
+io/clk10mto10k/CLK10K                    | BUFG                     | 244   |
+alu/_n0111(alu/_n0111<2>1:O)             | NONE(*)(alu/overCheckR_0)| 9     |
+alu/Mmux_Result313(alu/Mmux_Result3131:O)| NONE(*)(alu/shiftTempR_0)| 8     |
+-----------------------------------------+--------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -797,7 +830,7 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 8.342ns (Maximum Frequency: 119.878MHz)
+   Minimum period: 8.421ns (Maximum Frequency: 118.744MHz)
    Minimum input arrival time before clock: 0.339ns
    Maximum output required time after clock: 1.922ns
    Maximum combinational path delay: 0.000ns
@@ -822,8 +855,8 @@ Delay:               1.853ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDR:C->Q              2   0.236   0.527  io/clk10mto10k/count_4 (io/clk10mto10k/count_4)
-     LUT4:I0->O            1   0.043   0.350  io/clk10mto10k/GND_14_o_GND_14_o_equal_2_o<8>_SW0 (N2)
-     LUT6:I5->O           10   0.043   0.389  io/clk10mto10k/GND_14_o_GND_14_o_equal_2_o<8> (io/clk10mto10k/GND_14_o_GND_14_o_equal_2_o)
+     LUT4:I0->O            1   0.043   0.350  io/clk10mto10k/GND_39_o_GND_39_o_equal_2_o<8>_SW0 (N2)
+     LUT6:I5->O           10   0.043   0.389  io/clk10mto10k/GND_39_o_GND_39_o_equal_2_o<8> (io/clk10mto10k/GND_39_o_GND_39_o_equal_2_o)
      FDR:R                     0.264          io/clk10mto10k/count_0
     ----------------------------------------
     Total                      1.853ns (0.586ns logic, 1.267ns route)
@@ -831,42 +864,41 @@ Delay:               1.853ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'io/clk10mto10k/CLK10K'
-  Clock period: 8.342ns (frequency: 119.878MHz)
-  Total number of paths / destination ports: 256149589 / 451
+  Clock period: 8.421ns (frequency: 118.744MHz)
+  Total number of paths / destination ports: 221531450 / 447
 -------------------------------------------------------------------------
-Delay:               8.342ns (Levels of Logic = 18)
-  Source:            ram/OperandB_5_1 (FF)
-  Destination:       ram/RAM<15>_0 (FF)
+Delay:               8.421ns (Levels of Logic = 17)
+  Source:            ram/OperandB_6_1 (FF)
+  Destination:       io/eResult_12 (FF)
   Source Clock:      io/clk10mto10k/CLK10K rising
   Destination Clock: io/clk10mto10k/CLK10K rising
 
-  Data Path: ram/OperandB_5_1 to ram/RAM<15>_0
+  Data Path: ram/OperandB_6_1 to io/eResult_12
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               1   0.236   0.495  ram/OperandB_5_1 (ram/OperandB_5_1)
-     LUT3:I0->O            6   0.043   0.378  alu/OperandA[7]_OperandB[7]_div_5_OUT<3>131 (alu/OperandA[7]_OperandB[7]_div_5_OUT<3>13)
-     LUT6:I5->O            5   0.043   0.373  alu/OperandA[7]_OperandB[7]_div_5_OUT<7>1 (alu/OperandA[7]_OperandB[7]_div_5_OUT<7>)
-     LUT6:I5->O            7   0.043   0.439  alu/OperandA[7]_OperandB[7]_mod_6/Mmux_a[0]_GND_9_o_MUX_432_o161 (alu/OperandA[7]_OperandB[7]_mod_6/a[6]_GND_9_o_MUX_426_o)
-     LUT5:I3->O            1   0.043   0.495  alu/OperandA[7]_OperandB[7]_div_5_OUT<4>11_SW0 (N347)
-     LUT6:I3->O           12   0.043   0.411  alu/OperandA[7]_OperandB[7]_div_5_OUT<4>11 (alu/OperandA[7]_OperandB[7]_div_5_OUT<4>)
-     LUT6:I5->O           19   0.043   0.451  alu/OperandA[7]_OperandB[7]_div_5/a[6]_GND_8_o_MUX_313_o1 (alu/OperandA[7]_OperandB[7]_div_5/a[6]_GND_8_o_MUX_313_o)
-     LUT3:I2->O            1   0.043   0.350  alu/OperandA[7]_OperandB[7]_mod_6/Mmux_a[0]_GND_9_o_MUX_468_o131_SW0 (N359)
-     LUT6:I5->O            5   0.043   0.362  alu/OperandA[7]_OperandB[7]_mod_6/Mmux_a[0]_GND_9_o_MUX_468_o131 (alu/OperandA[7]_OperandB[7]_mod_6/a[3]_GND_9_o_MUX_465_o)
-     MUXCY:DI->O           1   0.228   0.000  alu/OperandA[7]_OperandB[7]_mod_6/Madd_GND_9_o_b[7]_add_13_OUT_Madd_Madd_cy<3> (alu/OperandA[7]_OperandB[7]_mod_6/Madd_GND_9_o_b[7]_add_13_OUT_Madd_Madd_cy<3>)
-     XORCY:CI->O           5   0.262   0.428  alu/OperandA[7]_OperandB[7]_mod_6/Madd_GND_9_o_b[7]_add_13_OUT_Madd_Madd_xor<4> (alu/OperandA[7]_OperandB[7]_mod_6/GND_9_o_b[7]_add_13_OUT<4>)
-     LUT6:I4->O            2   0.043   0.344  alu/OperandA[7]_OperandB[7]_mod_6/Mmux_a[0]_GND_9_o_MUX_478_o141 (alu/OperandA[7]_OperandB[7]_mod_6/a[4]_GND_9_o_MUX_474_o)
-     MUXCY:DI->O           1   0.228   0.000  alu/OperandA[7]_OperandB[7]_mod_6/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<4> (alu/OperandA[7]_OperandB[7]_mod_6/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<4>)
-     XORCY:CI->O           2   0.262   0.355  alu/OperandA[7]_OperandB[7]_mod_6/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<5> (alu/OperandA[7]_OperandB[7]_mod_6/GND_9_o_b[7]_add_15_OUT<5>)
-     LUT6:I5->O            5   0.043   0.518  alu/OperandA[7]_OperandB[7]_mod_6/Mmux_n032261 (alu/OperandA[7]_OperandB[7]_mod_6/n0322<5>)
-     LUT6:I3->O            2   0.043   0.410  alu/OperandA[7]_OperandB[7]_mod_6/BUS_0009_INV_241_o24_SW0 (N82)
-     LUT6:I4->O            3   0.043   0.362  alu/Mmux_Result234 (Result<8>)
-     LUT6:I5->O            1   0.043   0.350  ram/Mmux_GND_6_o_GND_6_o_mux_72_OUT<0>114_SW0 (N16)
-     LUT6:I5->O            1   0.043   0.000  ram/Mmux_GND_6_o_GND_6_o_mux_72_OUT<0>114 (ram/GND_6_o_GND_6_o_mux_72_OUT<8>)
-     FDE:D                    -0.000          ram/RAM<14>_0
+     FD:C->Q               2   0.236   0.500  ram/OperandB_6_1 (ram/OperandB_6_1)
+     LUT3:I0->O            5   0.043   0.373  alu/OperandA[7]_OperandB[7]_div_7_OUT<3>131 (alu/OperandA[7]_OperandB[7]_div_7_OUT<3>13)
+     LUT6:I5->O            5   0.043   0.373  alu/OperandA[7]_OperandB[7]_div_7_OUT<7>1 (alu/OperandA[7]_OperandB[7]_div_7_OUT<7>)
+     LUT6:I5->O            7   0.043   0.439  alu/OperandA[7]_OperandB[7]_mod_8/Mmux_a[0]_GND_9_o_MUX_432_o161 (alu/OperandA[7]_OperandB[7]_mod_8/a[6]_GND_9_o_MUX_426_o)
+     LUT5:I3->O            1   0.043   0.495  alu/OperandA[7]_OperandB[7]_div_7_OUT<4>11_SW4 (N382)
+     LUT6:I3->O           12   0.043   0.411  alu/OperandA[7]_OperandB[7]_div_7_OUT<4>11 (alu/OperandA[7]_OperandB[7]_div_7_OUT<4>)
+     LUT6:I5->O            4   0.043   0.512  alu/OperandA[7]_OperandB[7]_mod_8/BUS_0006_INV_209_o2 (alu/OperandA[7]_OperandB[7]_div_7_OUT<3>1)
+     LUT6:I3->O           32   0.043   0.480  alu/OperandA[7]_OperandB[7]_mod_8/BUS_0006_INV_209_o11 (alu/OperandA[7]_OperandB[7]_mod_8/BUS_0006_INV_209_o)
+     LUT3:I2->O            2   0.043   0.344  alu/OperandA[7]_OperandB[7]_div_7/Mmux_a[0]_GND_8_o_MUX_341_o131 (alu/OperandA[7]_OperandB[7]_div_7/a[3]_GND_8_o_MUX_338_o)
+     MUXCY:DI->O           1   0.228   0.000  alu/OperandA[7]_OperandB[7]_div_7/Madd_GND_8_o_b[7]_add_13_OUT_Madd_Madd_cy<3> (alu/OperandA[7]_OperandB[7]_div_7/Madd_GND_8_o_b[7]_add_13_OUT_Madd_Madd_cy<3>)
+     XORCY:CI->O           5   0.262   0.428  alu/OperandA[7]_OperandB[7]_div_7/Madd_GND_8_o_b[7]_add_13_OUT_Madd_Madd_xor<4> (alu/OperandA[7]_OperandB[7]_div_7/GND_8_o_b[7]_add_13_OUT<4>)
+     LUT6:I4->O            1   0.043   0.522  alu/OperandA[7]_OperandB[7]_div_7_OUT<1>1_SW0 (N35)
+     LUT6:I2->O            9   0.043   0.395  alu/OperandA[7]_OperandB[7]_div_7_OUT<1>21 (alu/OperandA[7]_OperandB[7]_div_7_OUT<1>)
+     LUT3:I2->O            2   0.043   0.500  alu/Mmux_Result311 (alu/Mmux_Result38)
+     LUT6:I3->O            2   0.043   0.500  alu/Mmux_Result312_SW1 (N252)
+     LUT6:I3->O            6   0.043   0.641  alu/Mmux_Result312 (alu/Mmux_Result39)
+     LUT6:I0->O            1   0.043   0.000  io/Mmux_State[3]_Result[15]_wide_mux_2_OUT<12>11_G (N526)
+     MUXF7:I1->O           1   0.178   0.000  io/Mmux_State[3]_Result[15]_wide_mux_2_OUT<12>11 (io/State[3]_Result[15]_wide_mux_2_OUT<12>)
+     FDE:D                    -0.000          io/eResult_12
     ----------------------------------------
-    Total                      8.342ns (1.818ns logic, 6.524ns route)
-                                       (21.8% logic, 78.2% route)
+    Total                      8.421ns (1.506ns logic, 6.915ns route)
+                                       (17.9% logic, 82.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'io/clk10mto10k/CLK10K'
@@ -951,6 +983,22 @@ Delay:               0.000ns (Levels of Logic = 1)
 Cross Clock Domains Report:
 --------------------------
 
+Clock to Setup on destination clock alu/Mmux_Result313
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+io/clk10mto10k/CLK10K|         |         |    0.706|         |
+---------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock alu/_n0111
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+io/clk10mto10k/CLK10K|         |         |    1.367|         |
+---------------------+---------+---------+---------+---------+
+
 Clock to Setup on destination clock convertCLK/clkout0
 ------------------+---------+---------+---------+---------+
                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
@@ -964,20 +1012,22 @@ Clock to Setup on destination clock io/clk10mto10k/CLK10K
                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------+---------+---------+---------+---------+
-io/clk10mto10k/CLK10K|    8.342|         |         |         |
+alu/Mmux_Result313   |         |    4.885|         |         |
+alu/_n0111           |         |    3.526|         |         |
+io/clk10mto10k/CLK10K|    8.421|         |         |         |
 ---------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 19.00 secs
-Total CPU time to Xst completion: 19.47 secs
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 25.95 secs
  
 --> 
 
-Total memory usage is 4647164 kilobytes
+Total memory usage is 4647172 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   18 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of warnings :   37 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
 

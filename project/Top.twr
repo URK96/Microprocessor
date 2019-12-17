@@ -36,22 +36,22 @@ Clock CLK_REF to Pad
              |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination  |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 -------------+-----------------+------------+-----------------+------------+------------------+--------+
-Segment7_0<0>|         5.583(R)|      SLOW  |         1.725(R)|      FAST  |CLK_10M           |   0.000|
-Segment7_0<1>|         7.974(R)|      SLOW  |         2.039(R)|      FAST  |CLK_10M           |   0.000|
-Segment7_0<2>|         8.074(R)|      SLOW  |         1.918(R)|      FAST  |CLK_10M           |   0.000|
-Segment7_0<3>|         7.804(R)|      SLOW  |         2.225(R)|      FAST  |CLK_10M           |   0.000|
-Segment7_0<4>|         7.928(R)|      SLOW  |         2.371(R)|      FAST  |CLK_10M           |   0.000|
-Segment7_0<5>|         7.352(R)|      SLOW  |         2.254(R)|      FAST  |CLK_10M           |   0.000|
-Segment7_0<6>|         7.528(R)|      SLOW  |         2.008(R)|      FAST  |CLK_10M           |   0.000|
-Segment7_0<7>|         7.311(R)|      SLOW  |         1.823(R)|      FAST  |CLK_10M           |   0.000|
-Segment7_1<0>|         5.966(R)|      SLOW  |         1.856(R)|      FAST  |CLK_10M           |   0.000|
-Segment7_1<1>|         7.197(R)|      SLOW  |         1.953(R)|      FAST  |CLK_10M           |   0.000|
-Segment7_1<2>|         7.306(R)|      SLOW  |         1.890(R)|      FAST  |CLK_10M           |   0.000|
-Segment7_1<3>|         7.293(R)|      SLOW  |         2.000(R)|      FAST  |CLK_10M           |   0.000|
-Segment7_1<4>|         7.456(R)|      SLOW  |         2.201(R)|      FAST  |CLK_10M           |   0.000|
-Segment7_1<5>|         7.276(R)|      SLOW  |         1.908(R)|      FAST  |CLK_10M           |   0.000|
-Segment7_1<6>|         8.196(R)|      SLOW  |         2.316(R)|      FAST  |CLK_10M           |   0.000|
-Segment7_1<7>|         7.235(R)|      SLOW  |         1.922(R)|      FAST  |CLK_10M           |   0.000|
+Segment7_0<0>|         5.424(R)|      SLOW  |         1.638(R)|      FAST  |CLK_10M           |   0.000|
+Segment7_0<1>|         8.758(R)|      SLOW  |         2.621(R)|      FAST  |CLK_10M           |   0.000|
+Segment7_0<2>|         8.702(R)|      SLOW  |         2.499(R)|      FAST  |CLK_10M           |   0.000|
+Segment7_0<3>|         8.749(R)|      SLOW  |         2.762(R)|      FAST  |CLK_10M           |   0.000|
+Segment7_0<4>|         8.623(R)|      SLOW  |         2.941(R)|      FAST  |CLK_10M           |   0.000|
+Segment7_0<5>|         8.521(R)|      SLOW  |         2.835(R)|      FAST  |CLK_10M           |   0.000|
+Segment7_0<6>|         8.589(R)|      SLOW  |         2.613(R)|      FAST  |CLK_10M           |   0.000|
+Segment7_0<7>|         8.110(R)|      SLOW  |         2.484(R)|      FAST  |CLK_10M           |   0.000|
+Segment7_1<0>|         4.918(R)|      SLOW  |         1.332(R)|      FAST  |CLK_10M           |   0.000|
+Segment7_1<1>|         8.493(R)|      SLOW  |         2.547(R)|      FAST  |CLK_10M           |   0.000|
+Segment7_1<2>|         8.024(R)|      SLOW  |         2.572(R)|      FAST  |CLK_10M           |   0.000|
+Segment7_1<3>|         8.342(R)|      SLOW  |         2.693(R)|      FAST  |CLK_10M           |   0.000|
+Segment7_1<4>|         8.365(R)|      SLOW  |         2.597(R)|      FAST  |CLK_10M           |   0.000|
+Segment7_1<5>|         8.333(R)|      SLOW  |         2.598(R)|      FAST  |CLK_10M           |   0.000|
+Segment7_1<6>|         8.788(R)|      SLOW  |         2.752(R)|      FAST  |CLK_10M           |   0.000|
+Segment7_1<7>|         8.326(R)|      SLOW  |         2.679(R)|      FAST  |CLK_10M           |   0.000|
 -------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK_REF
@@ -59,11 +59,11 @@ Clock to Setup on destination clock CLK_REF
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK_REF        |    2.552|         |         |         |
+CLK_REF        |    2.550|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Dec 16 20:42:03 2019 
+Analysis completed Wed Dec 18 02:41:26 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:

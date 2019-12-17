@@ -29,18 +29,18 @@ module RAM(
     
     always @(posedge CLK_In)
     begin
-		RAM[0] <= 8'b0000_0000;	// RAM Register[0]은 0으로 고정
-		OperandA <= RAM[Aaddr];	//RAM의 Aaddr에는 8비트 짜리 OperandA의 데이터가 들어간다.
-
-		if((State >= 4'd1 && State <= 4'd12) || (Instruction_alu == 3'b110 || Instruction_alu == 3'b111))   // 사용자 입력 받는 Instruction
+		RAM[0] <= 8'b0000_0000;	// RAM[0]은 0으로 고정
+		OperandA <= RAM[Aaddr];	// RAM의 Aaddr에는 8비트 짜리 OperandA의 데이터가 들어간다.
+		// 사용자 입력 또는 Shift Instruction
+		if((State >= 4'd1 && State <= 4'd12) || Instruction_alu == 3'b110 || Instruction_alu == 3'b111)  
 		begin
 			OperandB <= {4'b0000, Baddr};	// 사용자 입력, 4비트의 Baddr의 값을 8비트로 확장시켜 OperandB에 저장한다.	
 
-			if (Write_Enable) 			// Write_Enable이 HIGH일 때, RAM Register에 쓰기 가능
+			if (Write_Enable)
 			begin
 				if (State >= 4'd1 && State <= 4'd6)
 				begin
-					RAM[Write_addr] <= Baddr; // 사용자 입력은 하위 8bit에 저장되므로 Result의 0~7 범위만 저장
+					RAM[Write_addr] <= Baddr; 
 				end
 				else
 				begin
@@ -48,30 +48,30 @@ module RAM(
 				end
 			end
 		end
-
-      	else if (Instruction_alu == 3'b010)	// 곱셈, RAM[14]에 결과 상위 8bit 저장 & RAM[15]에 하위 8bit 저장
+		// 곱셈, RAM[14]에 결과 상위 8bit 저장 & RAM[15]에 하위 8bit 저장
+      	else if (Instruction_alu == 3'b010)	
 		begin
 			OperandB <= RAM[Baddr];
 
 			RAM[15] <= Write_data[15:8];
 			RAM[14] <= Write_data[7:0];
 		end
-		
-      	else if (Instruction_alu == 3'b011)	// 나눗셈, RAM[14]에 몫 저장 & RAM[15]에 나머지 저장
+		// 나눗셈, RAM[14]에 몫 저장 & RAM[15]에 나머지 저장
+      	else if (Instruction_alu == 3'b011)	
 		begin
 			OperandB <= RAM[Baddr];
 
 			RAM[15] <= Write_data[7:0];
 			RAM[14] <= Write_data[15:8];
 		end
-		
-		else //사용자 입력이 아닌, Baddr의 주소값이 들어오게 되면,
+		// 사용자 입력과 Shift 연산이 아닌, Baddr의 주소값이 들어올 때
+		else 
 		begin
-			OperandB <= RAM[Baddr]; // OperandB에 Baddr의 주소를 갖는 RAM의 값을 넣어준다.
+			OperandB <= RAM[Baddr]; // OperandB에 Baddr의 주소를 갖는 RAM의 값 대입
 
-			if (Write_Enable) // Opcode[0]인 Write_Enable이 HIGH가 되면
+			if (Write_Enable) 
 			begin
-				RAM[Write_addr] <= Write_data[7:0]; //Write_data의 값을 Write_addr의 주소를 갖는 RAM에 넣어준다.
+				RAM[Write_addr] <= Write_data[7:0];
 			end
 		end
 	end

@@ -5,6 +5,7 @@ module BCD7Segment(
 	output reg [6:0] segment
     );
 
+	// BCD 값에 따라 Hex Segment 값으로 변경
 	always @(BCD)
 	begin
 		case (BCD)
@@ -24,7 +25,7 @@ module BCD7Segment(
 			4'd13 : segment = 7'b101_1110;
 			4'd14 : segment = 7'b111_1001;
 			4'd15 : segment = 7'b111_0001;
-			default : segment = 8'b000_0000_0;
+			default : segment = 7'b000_0000;
 		endcase
 	end
 

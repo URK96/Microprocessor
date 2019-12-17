@@ -8,7 +8,7 @@ module Control(
 	output reg [3:0] State
     );
 	 
-	parameter [3:0] S0 = 4'd0,	// button 중복인식 방지용 state
+	parameter [3:0] S0 = 4'd0,	// button 중복방지 state
                     S1 = 4'd1,   // Idle
                     S2 = 4'd2,   // data save1
                     S3 = 4'd3,   // data save2
@@ -22,8 +22,11 @@ module Control(
 					S14 = 4'd14, // Instruction Exectuion Temp State
                     S15 = 4'd15; // operation execution
 
+	// 다음 상태 변경용 register
 	reg [3:0] nState, ntState;
+	// 임시 주소 저장 register
 	reg [3:0] tAddr;
+	// 임시 명령어 저장 register (각 4bit)
 	reg [3:0] Op1, Op2, Op3, Op4;
 
 	initial
@@ -39,15 +42,17 @@ module Control(
 	
 	always @(posedge CLK_In)
 	begin
+		// 어느 상태이던지 버튼3 입력 시 Idle (S1)으로 복귀
 		if (User_Input1 == 4'b1000)
 		begin
 			nState <= S0;
 			ntState <= S1;
 		end
-		
+		// State에 따라 처리
 		else
 		begin
 			case (State)
+				// Button 중복방지 state
 				S0:
 				begin
 					if (User_Input1 == 4'd0)
@@ -59,7 +64,7 @@ module Control(
 						nState <= S0;
 					end
 				end
-
+				// Idle
 				S1:
 				begin
 					Instruction <= {4'd0, User_Input0, 3'b000, 4'd0, 1'b0};
@@ -91,7 +96,7 @@ module Control(
 						nState <= S1;
 					end
 				end
-
+				// Data save 1
 				S2:
 				begin
 					Instruction <= {4'd0, User_Input0, 3'b000, 4'd0, 1'b0};
@@ -107,7 +112,7 @@ module Control(
 						nState <= S2;
 					end
 				end
-
+				// Data save 2
 				S3:
 				begin
 					Instruction <= {4'd0, User_Input0, 3'b000, 4'd0, 1'b0};
@@ -123,7 +128,7 @@ module Control(
 						nState <= S3;
 					end
 				end
-
+				// Data save 3
 				S4:
 				begin
 					Instruction <= {tAddr, 4'd0, 3'b000, 4'd0, 1'b0};
@@ -138,7 +143,7 @@ module Control(
 						nState <= S4;
 					end
 				end
-
+				// Data read 1
 				S5:
 				begin
 					Instruction <= {4'd0, User_Input0, 3'b000, 4'd0, 1'b0};
@@ -155,7 +160,7 @@ module Control(
 						nState <= S5;
 					end
 				end
-
+				// Data read 2
 				S6:
 				begin
 					Instruction <= {tAddr, 4'd0, 3'b000, 4'd0, 1'b0};
@@ -170,7 +175,7 @@ module Control(
 						nState <= S6;
 					end
 				end
-
+				// Instruction mode 1
 				S8:
 				begin
 					Instruction <= {4'd0, User_Input0, 3'b000, 4'd0, 1'b0};
@@ -186,7 +191,7 @@ module Control(
 						nState <= S8;
 					end
 				end
-
+				// Instruction mode 2
 				S9:
 				begin
 					Instruction <= {4'd0, User_Input0, 3'b000, 4'd0, 1'b0};
@@ -202,7 +207,7 @@ module Control(
 						nState <= S9;
 					end
 				end
-
+				// Instruction mode 3
 				S10:
 				begin
 					Instruction <= {4'd0, User_Input0, 3'b000, 4'd0, 1'b0};
@@ -211,7 +216,7 @@ module Control(
 					begin
 						Op3 <= User_Input0;
 						nState <= S0;
-
+						// Mul, Div 연산 시 Instruction mode 4 건너뛰기
 						if (User_Input0[3:1] == 3'b010 || User_Input0[3:1] == 3'b011)
 						begin
 							Op4 <= 4'd0;
@@ -227,7 +232,7 @@ module Control(
 						nState <= S10;
 					end
 				end
-
+				// Instruction mode 4
 				S12:
 				begin
 					Instruction <= {4'd0, User_Input0, 3'b000, 4'd0, 1'b0};
@@ -243,20 +248,35 @@ module Control(
 						nState <= S12;
 					end
 				end
-
+				// Intruction initial execution temp state
 				S14:
 				begin
 					Instruction <= {Op1, Op2, Op3, Op4};
 					nState <= S15;
 				end
-
+				// Instruction execution & segment display state
 				S15:
 				begin
+					// Write enable 일 때
 					if (Op4[0] == 1'b1)
 					begin
-						tAddr <= {Op3[0], Op4[3:1]};
-						Instruction <= {4'd0, tAddr, 3'b000, 4'd0, 1'b0};
+						// Mul, Div 연산 외의 연산에서 RAM[0]에 저장하는 명령어의 경우
+						if ((!(Op3[3:1] == 3'b010 || Op3[3:1] == 3'b011) && {Op3[0], Op4[3:1]} == 4'b0000))
+						begin
+							Instruction <= {Op1, Op2, Op3, Op4};
+						end
+						// Aaddr 또는 Baddr이 Write_addr과 동일할 경우
+						else if (Op1 == {Op3[0], Op4[3:1]} || Op2 == {Op3[0], Op4[3:1]})
+						begin
+							tAddr <= {Op3[0], Op4[3:1]};
+							Instruction <= {4'd0, tAddr, 3'b000, 4'd0, 1'b0};
+						end
+						else
+						begin
+							Instruction <= {Op1, Op2, Op3, Op4[3:1], 1'b0};
+						end
 					end
+					// Write disable 일 때
 					else
 					begin
 						Instruction <= {Op1, Op2, Op3, Op4};
